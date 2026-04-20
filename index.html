@@ -416,14 +416,14 @@ tbody td{padding:8px 10px;border-bottom:1px solid var(--b1);color:var(--t2)}tbod
 // ===== SUPABASE CONFIG =====
 // Supabase 프로젝트 설정에서 URL과 anon key를 복사하세요
 var SUPABASE_URL='https://qrwtptmiykkaohoapgls.supabase.co';  // 예: https://abc123.supabase.co
-var SUPABASE_KEY='sb_publishable__TxV9ZI2TeANFj70Aurbhw_81qCpcNA';  // 예: eyJhbGci...
+var SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFyd3RwdG1peWtrYW9ob2FwZ2xzIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYxNzUxMDEsImV4cCI6MjA5MTc1MTEwMX0.cDZXlpveZBCBY-yoowRkiRkZh1t07w_TfHjTv9L73IQ';  // 예: eyJhbGci...
 var SB=null; // Supabase client
 var SB_USER=null; // Current Supabase user
 var USE_CLOUD=false; // Cloud mode flag
 
 // Initialize Supabase (if configured)
 function initSupabase(){
-if(SUPABASE_URL==='https://qrwtptmiykkaohoapgls.supabase.co'||!window.supabase)return false;
+if(SUPABASE_URL==='YOUR_SUPABASE_URL'||!window.supabase)return false;
 try{SB=window.supabase.createClient(SUPABASE_URL,SUPABASE_KEY);return true}catch(e){console.warn('Supabase init failed:',e);return false}}
 
 // Login mode switcher
